@@ -4,6 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
+
 @Entity
 @Data
 public class Student {
@@ -17,4 +19,7 @@ public class Student {
     private Gender gender;
     @OneToOne
     private LearningParty learningParty;
+
+    @ManyToMany
+    private List<Course>enrolledCourses;
 }

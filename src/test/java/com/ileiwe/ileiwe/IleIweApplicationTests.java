@@ -23,7 +23,7 @@ class IleIweApplicationTests {
 
 	@Test
 	public void connectionToDataBaseTest(){
-		String  url = "jdbc:mysql//:localhost:3306/shopdb";
+		String  url = "jdbc:mysql//:localhost:3306/school_user";
 		String username = "school_user";
 		String password = "iwe123";
 		assertThat(dataSource).isNotNull();
